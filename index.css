@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Kaisei Tokumin', serif;
+}
+body{
+	background-color: #E3E3E3;
+}
+
+#wrap{
+	overflow: hidden;
+}
+
+
+@media screen and (min-width:641px){
+
+
+
+header h1{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header h1 figure img{
+height: 700px;
+width: 800px;
+}
+#portfolio img {
+	position: absolute;
+    height: 133px;
+    top: 194px;
+    left: 68%;
+}
+
+/* ここからハンバーガーメニュー */
+.hamburger-menu{
+	height: 300px;
+}
+    .menu-btn {
+		position: absolute;
+		top: 545px;
+		left: 48%;    
+	}
+	.menu-btn span img{
+		width: 139px;
+		transition: .3s ease-in-out;
+	}
+	.menu-btn span img:hover{
+		transition: all 1.5s;
+		filter: grayscale(100%);
+
+	}
+    #menu-btn-check{
+        display: none;
+    }
+    .menu-content {
+		width: 30%;
+		z-index: 80;
+		background-color: #ffe6a4;
+		margin: 50px auto 100px auto;
+		visibility: hidden;
+		}
+    .header-inner {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+		height: 0;
+    }
+    #menu-btn-check:checked ~ .menu-content {
+		visibility: visible;
+	}
+    .header-inner ul{
+        display: flex;
+        list-style: none;
+		height: 0;
+    }
+    .header-inner li a{
+		transition: .3s ease-in-out;
+        padding: 0 15px;
+        color: #595857;
+        text-decoration: none;
+    }
+	.header-inner li a img:hover{
+		animation: fluffy1 3s ease infinite;
+		filter: sepia(40%);
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-duration: 1.5s;
+		color:red;
+	}
+	@keyframes fluffy1 {
+		0% {
+			transform: translate(0px, 0);
+		  }
+		  100% {
+			transform: translate(10px, 0);
+		  }	  }
+
+	.ham_contact{
+		position: relative;
+		left: -130%;
+		bottom: 42px;
+		width: 80px;
+	}
+	.ham_items{
+		position: relative;
+		right: -192%;
+		top: -48px;
+		width: 80px;
+
+	}
+	/*ここから作品↓*/
+	/* #items{
+		margin-top: 200px; */
+
+	#bg_img01{
+		background-image: url(../portfolio/image/bg_img01.png);
+		height: 200px;
+		position: relative;
+		top: -100px;
+	}
+	#items #item1{
+		width: 500px;
+		height: auto;
+		margin-left: 61%;
+	}
+	#items #item2{
+		margin-top: 100px;
+		width: 600px;
+		height: auto;
+		margin-left: 8%;
+	}
+
+	/*ここから連絡↓*/
+	#contact{
+		margin-top: 200px;
+	}
+	#maru{
+		background-image: url(../portfolio/image/maru.png);
+		width: 800px;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 0 auto;
+	}
+	#contact h2{
+		text-align: center;
+		position: relative;
+		top: -400px;
+		}
+#contact figure img {
+		display: block;
+		margin: 0 auto;
+		width: 7%;
+		position: relative;
+		top: -340px;	
+	}
+	#contact figure p {
+		position: relative;
+		top: -300px;
+		text-align: center;
+		font-size: 1.5em;	
+
+	}
+
+	footer{
+		background-color: black;
+		padding: 30px;
+		text-align: center;
+	}
+	footer address{
+		color:#efe3c3;
+	}
+
+	}
+	
+
+/* ここからスマートフォン */
+
+@media screen and (max-width:640px){
+
+	#wrap{
+		overflow: hidden;
+	}
+	
+
+	.top_img h1 figure:first-child img{
+		display: none;
+	  }
+	#portfolio img {
+		position: absolute;
+		height: 133px;
+		top: 111px;
+		left: 30%;
+		width: 247px;
+	}
+
+/* ここからハンバーガーメニュー */
+.hamburger-menu{
+	height: 300px;
+}
+    .menu-btn {
+		position: absolute;
+		top: 518px;
+		left: 30px;   
+	}
+	.menu-btn span img{
+		width: 92px;
+	}
+	.menu-btn span img:hover{
+		transition: all 1.5s;
+		filter: grayscale(100%);
+
+	}
+    #menu-btn-check{
+        display: none;
+    }
+    .menu-content {
+		width: 30%;
+		z-index: 80;
+		background-color: #ffe6a4;
+		margin: 50px auto 100px auto;
+		visibility: hidden;
+		}
+    .header-inner {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+		height: 0;
+    }
+    #menu-btn-check:checked ~ .menu-content {
+		visibility: visible;
+	}
+    .header-inner ul{
+        display: flex;
+        list-style: none;
+		height: 0;
+    }
+    .header-inner li a{
+		transition: .3s ease-in-out;
+        padding: 0 15px;
+        color: #595857;
+        text-decoration: none;
+    }
+	.header-inner li a img:hover{
+		animation: fluffy1 3s ease infinite;
+		filter: sepia(40%);
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-duration: 1.5s;
+		filter: grayscale(100%);
+
+	}
+	@keyframes fluffy1 {
+		0% {
+			transform: translate(0px, 0);
+		  }
+		  100% {
+			transform: translate(10px, 0);
+		  }	  }
+
+	.ham_contact{
+		position: relative;
+		bottom: -10px;
+		width: 58px;
+		left: 50px;
+	}
+	.ham_items{
+		position: relative;
+		bottom: -10px;
+		width: 58px;
+		left: 50px;
+	}
+	#bg_img01{
+		background-image: url(../portfolio/image/bg_img01.png);
+		height: 200px;
+		position: relative;
+		top: -100px;
+		width: 100%;
+	}
+	/*ここから作品↓*/
+
+		#bg_img01{
+			background-image: url(../portfolio/image/bg_img01.png);
+			height: 200px;
+			position: relative;
+			top: -100px;
+		}
+		#items #item1{
+			width: 500px;
+			height: auto;
+			width: 100%;
+
+		}
+		#items #item2{
+			margin-top: 100px;
+			height: auto;
+			width: 100%;
+		}
+	
+		/*ここから連絡↓*/
+		#contact{
+			margin-top: 200px;
+		}
+		#maru{
+			background-image: url(../portfolio/image/maru.png);
+			width: 100%;
+			height: 286px;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			margin: 0 auto;
+		}
+		#contact h2{
+			text-align: center;
+			position: relative;
+			top: -223px;
+			}
+		#contact figure img{
+			display: block;
+			margin: 0 auto;
+			width: 18%;
+			position: relative;
+			top: -205px;
+				}
+		#contact figure p {
+					position: relative;
+					top: -194px;
+					text-align: center;
+					font-size: 1.5em;	
+			
+				}
+		footer{
+			background-color: black;
+			padding: 30px;
+			text-align: center;
+		}
+		footer address{
+			color:#efe3c3;
+		}
+	
+	  
+}
+
